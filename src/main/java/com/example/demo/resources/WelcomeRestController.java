@@ -25,10 +25,10 @@ public class WelcomeRestController {
 		return l;
 	}
 
-	@GetMapping("/topics")
-	public List<Topic> getAllTopics() {
+	@GetMapping("/topics/")
+	public String getAllTopics() {
 		List<Topic> l=listOfCourses();
-		return l;
+		return "nagalakshmi";
 	}
 
 
