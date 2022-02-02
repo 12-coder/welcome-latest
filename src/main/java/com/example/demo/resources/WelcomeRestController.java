@@ -30,12 +30,13 @@ public class WelcomeRestController {
 		List<Topic> l=listOfCourses();
 		return "nagalakshmi";
 	}
+	*/
 	@ApiOperation(value = "Get Welcome Message For The Given Name ", response = String.class, tags = "getWelcomeNote")
 	@GetMapping("/hi")
 	public String hi() {
 		return "hello";
 	}
-*/
+
 
 
 }
