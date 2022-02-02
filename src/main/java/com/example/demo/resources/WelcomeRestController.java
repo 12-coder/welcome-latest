@@ -25,10 +25,10 @@ public class WelcomeRestController {
 		return l;
 	}
 
-	@GetMapping("/topics/")
+	@GetMapping("/topics")
 	public String getAllTopics() {
 		List<Topic> l=listOfCourses();
-		return "nagalakshmi";
+		return l;
 	}
 	
 	@ApiOperation(value = "Get Welcome Message For The Given Name ", response = String.class, tags = "getWelcomeNote")
