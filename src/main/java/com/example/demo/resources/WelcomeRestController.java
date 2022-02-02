@@ -16,7 +16,7 @@ public class WelcomeRestController {
 	public String welcome(@PathVariable("name") String name) {
 		return name+", Welcome to my spring boot app";
 	}
-	public List<Topic> listOfCourses() {
+	/*public List<Topic> listOfCourses() {
 		List<Topic> l = new ArrayList<Topic>();
 
 		l.add(new Topic(1, "spring framework", "spring framework description"));
@@ -35,7 +35,7 @@ public class WelcomeRestController {
 	public String hi() {
 		return "hello";
 	}
-
+*/
 
 
 }
