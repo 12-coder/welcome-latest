@@ -16,5 +16,20 @@ public class WelcomeRestController {
 	public String welcome(@PathVariable("name") String name) {
 		return name+", Welcome to my spring boot app";
 	}
+	public List<Topic> listOfCourses() {
+		List<Topic> l = new ArrayList<Topic>();
+
+		l.add(new Topic(1, "spring framework", "spring framework description"));
+		l.add(new Topic(2, "core java", "core java description"));
+		l.add(new Topic(3, "javascript", "javascript description"));
+		return l;
+	}
+
+	@GetMapping("/topics")
+	public List<Topic> getAllTopics() {
+		List<Topic> l=listOfCourses();
+		return l;
+	}
+
 
 }
