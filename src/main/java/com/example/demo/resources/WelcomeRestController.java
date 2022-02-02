@@ -31,7 +31,7 @@ public class WelcomeRestController {
 		return "nagalakshmi";
 	}
 	@ApiOperation(value = "Get Welcome Message For The Given Name ", response = String.class, tags = "getWelcomeNote")
-	@GetMapping("/welcome/hi")
+	@GetMapping("/hi")
 	public String hi() {
 		return "hello";
 	}
