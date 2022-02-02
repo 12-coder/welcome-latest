@@ -26,7 +26,7 @@ public class WelcomeRestController {
 	}
 
 	@GetMapping("/topics")
-	public String getAllTopics() {
+	public List<Topic> getAllTopics() {
 		List<Topic> l=listOfCourses();
 		return l;
 	}
